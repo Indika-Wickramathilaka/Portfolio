@@ -18,4 +18,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
       content.classList.remove('hidden');     
     }, 2000); 
+}); 
+
+
+/* ------ Download cv ------ */
+const btnDownload = document.getElementById('downloadBtn');
+btnDownload.addEventListener('click', function(){
+    let filrUrl = "cv/R.D.I.C.K Wickramathilaka CV.pdf";
+    const link = document.createElement('a');
+    link.href = filrUrl;
+    link.download = "R.D.I.C.K Wickramathilaka CV.pdf";
+
+    link.click();
+    
+    console.log("Hello")
 });
